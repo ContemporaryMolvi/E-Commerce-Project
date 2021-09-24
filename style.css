@@ -125,6 +125,9 @@ section{
     gap: 1.5rem;
     padding: 5rem 9% 0 9%;
     font-size: 1.3rem;
+    background: url(./images/home-bg-1.jpg) no-repeat;  
+    background-size: cover;
+    background-position: center;
 }
 
 .home .slide-container .slide .content{
@@ -148,7 +151,7 @@ section{
 
 .home .slide-container .slide .image .shoe{
     width: 100%;
-    transform: rotate(-10deg);
+    transform: rotate(-25deg);
     margin-top: 15rem;
     animation: shoe .7s linear;
 }
@@ -167,6 +170,7 @@ section{
     left: 0;
     z-index: -1;
     margin-top: 5rem;
+    transform: rotate(-15deg);
     animation: shoeText;
     animation-duration:  0.5s ;
     animation-delay: 0.5s;
@@ -195,3 +199,4 @@ section{
     font-size: 1.5rem;
     color: var(--black);
 }
+
