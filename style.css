@@ -408,7 +408,7 @@ section{
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
-    padding: 12rem;
+    padding: 0rem 12rem;
 }
 
 .review .box-container .box{
@@ -464,14 +464,66 @@ section{
     flex: 1 1 20rem;
     gap: 1.5rem;
 }
+
 .footer .box-container .box h3{
     font-size: 2.5rem;
     color: var(--black);
+    padding-bottom: .5rem;
 }
 
 .footer .box-container .box a{
     font-size: 1.4rem;
     color: var(--black);
+    padding-bottom: .5rem;
+    display: block;
+    text-align: left;
+}
+
+.footer .box-container .box a:hover{
+    color: var(--orange);
+}
+
+/* Newsletter Styles */
+.newsletter{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.newsletter .content{
+    text-align: center;
+    border: .1rem solid rgba(0,0,0,0.1);
+    border-radius: .5rem;
+    background-color: #f9f9f9;
+    padding: 2rem;
+}
+
+.newsletter .content h3{
+    font-size: 2.5rem;
+    color: var(--black);
+}
+
+.newsletter .content p{
+    font-size: 1.5rem;
+    color: var(--black);
+    margin: 1rem auto;
+    max-width: 50rem;
+}
+
+.newsletter .content form{
+    margin: 1rem auto;
+    max-width: 40rem;
+    display: flex;
+}
+
+.newsletter .content .box{
+    width: 40%;
+    font-size: 1.7rem;
+    text-transform: none;
+    color: #333;
+    padding: 1rem;
+    border: .2rem solid  rgba(0,0,0,0.1);
+    border-radius: none;
+    margin-top: 1rem;
 }
 
 /* Media Queries */
@@ -501,5 +553,19 @@ section{
 
     .home .slide-container .slide .image{
         padding-bottom: 6rem;
+    }
+}
+
+@media (max-width:991px){
+    html{
+        font-size: 55%;
+    }
+
+    header{
+        padding: 2rem;
+    }
+
+    section{
+        padding: 2rem;
     }
 }
